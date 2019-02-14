@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>お問い合わせ｜　ALBERNI</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- ヘッダー始まり -->
+      <header class="header">
+        <h1 class="logo"><a href="index.html"><img src="images/logo1.jpg" alt=""></a></h1>
+        <nav class="nav">
+          <ul>
+            <li><a href="index.html">ホーム</a></li>
+            <li><a href="greet.html">店主</a></li>
+            <li><a href="about.html">店舗案内</a></li>
+            <li><a href="access.html">アクセス</a></li>
+            <li><a href="menu.html">メニュー</a></li>
+            <li><a href="fuukei.html">店舗周辺</a></li>
+            <li><a href="contact.html">お問い合わせ</a></li>
+          </ul>
+        </nav>
+      </header>
+      <!--　ヘッダー終了 -->
+      <!-- メイン始まり　-->
+      <main>
+        <h2>お問い合わせ</h2>
+        <form method="GET" action="result.html" >
+          <div>
+            <label for="kind">お問い合わせの種類</label><br>
+            <select id="kind" name="kind">
+              <option value="reservation">ご予約</option>
+              <option value="event">イベントについて</option>
+              <option value="contact">その他のお問い合わせ</option>
+            </select>
+          </div>
+          <div>
+            ALBERNIにご来店いただいたことはありますか。<br>
+            <label><input type="radio" name="first" value="yes" checked>はい</label>
+            <label><input type="radio" name="first" value="no">いいえ</label>
+          </div>
+          <div>
+            当カフェをお知りになったきっかけは？<br>
+            <label><input type="checkbox" name="how" value="friends">知り合いの紹介で</label>
+            <label><input type="checkbox" name="how" value="magazine">雑誌・Webサイトを見て</label>
+          </div>
+          <div>
+            <label>お問い合わせの件名<br>
+            <input type="text" name="subject" placeholder="お問い合わせ"></label>
+          </div>
+          <div>
+            <label>お問い合わせの具体的な内容<br>
+            <textarea name="message"></textarea></label>
+          </div>
+          <div>
+            <input type="submit" name="submit" value="送信">
+          </div>
+          <div class="nigouten">
+            <h2>[ALBERNI]2号店やりたい方募集</h2>
+            <label>出店希望の方はこちらまでよろしくお願いします。<br>
+            <div class="nigouten-li">
+              <ul>
+                <li>TEL:080-〇〇〇〇ー〇〇〇〇</li>
+                <li>mail:〇〇〇〇〇.co.jp</li>
+                <li>LINE:〇〇〇〇〇</li>
+              </ul>
+            </div>
+            <input type="text" name="subject" placeholder="お問い合わせ"></label>
+          </div>
+          <div>
+            <input type="submit" name="submit" value="送信">
+          </div>
+        </form>
+      </main>
+      <!--　メイン終わり -->
+      <!--　フッダー始まり -->
+      <footer class="footer">
+        <p>&copy;Copyright ALBERNI. All rights reserved.</p>
+      </footer>
+      <!--　フッダー終わり -->
+    </div>
+  </body>
+</html>
