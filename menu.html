@@ -1,150 +1,196 @@
 <!DOCTYPE html>
 <html lang="ja" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>メニュー　｜　ALBERNI</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-      .menu-block img{
-        width: 350px;
-        height: 350px;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="wrapper">
-      <!-- ヘッダー始まり -->
-      <header class="header">
-        <h1 class="logo"><a href="index.php"><img src="images/logo1.jpg" alt=""></a></h1>
-        <nav class="nav">
-          <ul>
-            <li><a href="index.php">ホーム</a></li>
-            <li><a href="greet.html">店主</a></li>
-            <li><a href="about.html">店舗案内</a></li>
-            <li><a href="access.html">アクセス</a></li>
-            <li><a href="menu.html">メニュー</a></li>
-            <li><a href="fuukei.html">店舗周辺</a></li>
-            <li><a href="contact.html">お問い合わせ</a></li>
-          </ul>
-        </nav>
-      </header>
-      <!--　ヘッダー終了 -->
-      <!-- メイン始まり　-->
-      <main>
-        <h2>メニュー</h2>
-        <div class="menu-block">
-          <div class="menu-item">
-            <div class="menu-photo">
-              <img src="images/hotdog.jpg" alt="">
-            </div>
-            <div class="menu-text">
-              <h3>ホットドック</h3>
-              <p>自家製あらびきソーセージを使ったベーシックなホットドック</p>
 
-              <p>&yen;450-(税込み)</p>
-            </div>
+<head>
+  <meta charset="utf-8">
+  <title>メニュー　｜　ALBERNI</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./jquery-3.3.1.js"></script>
+  <style>
+    .menu-img {
+      width: 350px;
+      height: 350px;
+    }
+
+    h3 {
+      color: red;
+    }
+
+    .logo {
+      background-color: red;
+    }
+
+    dl {
+      width: 300px;
+      margin: 5px 50px 50px 5px;
+    }
+
+    dl dt {
+      background: #7CADB6;
+      cursor: pointer;
+    }
+
+    dl dd {
+      border: 1px solid #7CADB6;
+      height: 250px;
+      margin: 0;
+    }
+  </style>
+  <script>
+    $(function() {
+      $("dt").click(function() {
+        if ($("dd").css("display") == "block") {
+          $("dd:not(:animated)").slideUp("slow");
+        } else {
+          $("dd").slideDown("slow");
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="wrapper">
+    <!-- ヘッダー始まり -->
+    <header class="header">
+      <h1 class="logo"><a href="index.html"><img src="images/logo1.jpg" alt=""></a></h1>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="greet.html" id="greet">店主</a></li>
+          <li><a href="about.html" id="about">店舗案内</a></li>
+          <li><a href="access.html" id="access">アクセス</a></li>
+          <li><a href="menu.html" id="menu">メニュー</a></li>
+          <li><a href="fuukei.html" id="fuukei">店舗周辺</a></li>
+          <li><a href="contact.html" id="contact">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!--　ヘッダー終了 -->
+    <!-- メイン始まり　-->
+    <main>
+      <h2>メニュー</h2>
+      <div class="menu-block">
+        <div class="menu-item">
+          <div class="menu-photo">
+            <img src="images/hotdog.jpg" alt="" class="menu-img">
           </div>
-          <div class="menu-item">
-            <div class="menu-photo">
-              <img src="images/hotdog2.jpg" alt="">
-            </div>
-            <div class="menu-text">
-              <h3>チリビーンズホットドック</h3>
-              <p>１番人気！お肉ったっぷりチリビーンズにチェダーチーズをかけて炙りました。</p>
+          <div class="menu-text">
+            <h3>ホットドック</h3>
+            <p>自家製あらびきソーセージを使ったベーシックなホットドック</p>
 
-              <p>&yen;600-(税込み)</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-photo">
-              <img src="images/hotdog3.jpg" alt="">
-            </div>
-            <div class="menu-text">
-              <h3>サルサドッグ</h3>
-              <p>サルサソースとハラペーニョをトッピング（辛さは中辛です）辛いですが、さっぱり食べられます。</p>
-
-              <p>&yen;550-(税込み)</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-photo">
-              <img src="images/hotdog4.jpg" alt="">
-            </div>
-            <div class="menu-text">
-              <h3>テリヤキホットドッグ</h3>
-              <p>テリヤキソース、マヨネーズ、のり、炒めた玉ねぎの相性は抜群です。</p>
-
-              <p>&yen;550-(税込み)</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-photo">
-              <img src="images/hotdog5.jpg" alt="">
-            </div>
-            <div class="menu-text">
-              <h3>野菜たっぷりホットドック</h3>
-              <p>トマト、パプリカ、大葉、ピクルス入りのヘルシーなホットドック、マスタード塩のシカゴスタイルで食べるのがおススメです。</p>
-
-              <p>&yen;600-(税込み)</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-photo">
-              <img src="images/hotdog6.jpg" alt="">
-            </div>
-            <div class="menu-text">
-              <h3>コールスローホットドッグ</h3>
-              <p>コールスローサラダとフライドオニオンがのったホットドッグです。サクサクのフライドオニオンがコールスローサラダと良く合います。</p>
-
-              <p>&yen;550-(税込み)</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-photo">
-              <img src="images/hotdog7.jpg" alt="">
-            </div>
-            <div class="menu-text">
-              <h3>ベーコンジャムホットドッグ</h3>
-              <p>ベーコンと玉ねぎで作ったジャムがのっています。甘さと塩気がとても合います。リピーター率高いです。</p>
-
-              <p>&yen;600-(税込み)</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-photo">
-              <img src="images/poteto.jpg" alt="">
-            </div>
-            <div class="menu-text">
-              <h3>フライドポテト</h3>
-              <p>揚げたてのフライドポテト（塩）</p>
-
-              <p>&yen;250-(税込み)</p>
-              <p>その他のフレーバー付きにもできます。</p>
-
-              <p>&yen;300-(税込み)</p>
-            </div>
-          </div>
-          <div class="menu-item">
-            <div class="menu-photo">
-              <img src="images/poteto2.jpg" alt="">
-            </div>
-            <div class="menu-text">
-              <h3>プーティン</h3>
-              <p>揚げたてのポテトの上にチェダーチーズと熱々のグレービーソースをかけてあるカナダの代表料理。ハマること間違いなし。</p>
-              <p>レギュラーサイズ（２～３人前）</p>
-              <p>&yen;500-(税込み)</p>
-              <p>ハーフサイズ（１人前）</p>
-              <p>&yen;350-(税込み)</p>
-            </div>
+            <p>&yen;450-(税込み)</p>
           </div>
         </div>
-      </main>
-      <!--　メイン終わり -->
-      <!--　フッダー始まり -->
-      <footer class="footer">
-        <p>&copy;Copyright ALBERNI. All rights reserved.</p>
-      </footer>
-      <!--　フッダー終わり -->
-    </div>
-  </body>
+        <div class="menu-item">
+          <div class="menu-photo">
+            <img src="images/hotdog2.jpg" alt="" class="menu-img">
+          </div>
+          <div class="menu-text">
+            <h3>チリビーンズホットドック</h3>
+            <p>１番人気！お肉ったっぷりチリビーンズにチェダーチーズをかけて炙りました。</p>
+
+            <p>&yen;600-(税込み)</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-photo">
+            <img src="images/hotdog3.jpg" alt="" class="menu-img">
+          </div>
+          <div class="menu-text">
+            <h3>サルサドッグ</h3>
+            <p>サルサソースとハラペーニョをトッピング（辛さは中辛です）辛いですが、さっぱり食べられます。</p>
+
+            <p>&yen;550-(税込み)</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-photo">
+            <img src="images/hotdog4.jpg" alt="" class="menu-img">
+          </div>
+          <div class="menu-text">
+            <h3>テリヤキホットドッグ</h3>
+            <p>テリヤキソース、マヨネーズ、のり、炒めた玉ねぎの相性は抜群です。</p>
+
+            <p>&yen;550-(税込み)</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-photo">
+            <img src="images/hotdog5.jpg" alt="" class="menu-img">
+          </div>
+          <div class="menu-text">
+            <h3>野菜たっぷりホットドック</h3>
+            <p>トマト、パプリカ、大葉、ピクルス入りのヘルシーなホットドック、マスタード塩のシカゴスタイルで食べるのがおススメです。</p>
+
+            <p>&yen;600-(税込み)</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-photo">
+            <img src="images/hotdog6.jpg" alt="" class="menu-img">
+          </div>
+          <div class="menu-text">
+            <h3>コールスローホットドッグ</h3>
+            <p>コールスローサラダとフライドオニオンがのったホットドッグです。サクサクのフライドオニオンがコールスローサラダと良く合います。</p>
+
+            <p>&yen;550-(税込み)</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-photo">
+            <img src="images/hotdog7.jpg" alt="" class="menu-img">
+          </div>
+          <div class="menu-text">
+            <h3>ベーコンジャムホットドッグ</h3>
+            <p>ベーコンと玉ねぎで作ったジャムがのっています。甘さと塩気がとても合います。リピーター率高いです。</p>
+
+            <p>&yen;600-(税込み)</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-photo">
+            <img src="images/poteto.jpg" alt="" class="menu-img">
+          </div>
+          <div class="menu-text">
+            <h3>フライドポテト</h3>
+            <p>揚げたてのフライドポテト（塩）</p>
+
+            <p>&yen;250-(税込み)</p>
+            <p>その他のフレーバー付きにもできます。</p>
+
+            <p>&yen;300-(税込み)</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-photo">
+            <img src="images/poteto2.jpg" alt="" class="menu-img">
+          </div>
+          <div class="menu-text">
+            <h3 id="pu-thin">プーティン</h3>
+            <p>揚げたてのポテトの上にチェダーチーズと熱々のグレービーソースをかけてあるカナダの代表料理。ハマること間違いなし。</p>
+            <p>レギュラーサイズ（２～３人前）</p>
+            <p>&yen;500-(税込み)</p>
+            <p>ハーフサイズ（１人前）</p>
+            <p>&yen;350-(税込み)</p>
+            <dl>
+              <dt>プーティン補足説明</dt>
+              <dd style="display: block;">
+                プーティンとは、プーティン（英語発音puːˈtiːn/）（仏: Poutine）（仏語発音[putin]プティーヌ）は、フライドポテトにグレイビーソースと粒状のチーズカード（英: Cheese Curds、仏: Fromage en grains）をかけたファーストフード形式の食べ物。代表的なカナダ料理である。また、アカディア人のダンプリング状の伝統料理の総称でもある。
+              </dd>
+            </dl>
+          </div>
+
+        </div>
+      </div>
+    </main>
+    <!--　メイン終わり -->
+    <!--　フッダー始まり -->
+    <footer class="footer">
+      <p>&copy;Copyright ALBERNI. All rights reserved.</p>
+    </footer>
+    <!--　フッダー終わり -->
+  </div>
+</body>
+
 </html>
