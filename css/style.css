@@ -9,7 +9,7 @@ html * {
 }
 body {
   margin: 0 0 0 0;
-  background-color: #eeece9;
+  background-color: white;
 }
 .wrapper {
   margin: 0 auto 0 auto;
@@ -51,35 +51,32 @@ img {
   margin: 50px 0 40px 0;
   line-height: 0;
   text-align: center;
+	border: 20px solid black;
 }
+.logo img{
+  width: 500px;
+  height: 500px;
+}
+/*.logo img{
+  margin-top: -40px;
+  margin-bottom: -40px;
+}*/
 .nav li {
   display: inline;
   list-style-type: none;
-  padding-right: 30px;
+  padding-right: 20px;
+  font-size: 25px;
+}
 
-}
-#greet{
-  color: #0000FF;
-}
-#about{
-  color: #008000;
-}
-#access{
-  color: #00FFFF;
-}
-#menu{
+#menu, #calendar{
   color: #FF0000;
 }
-#fuukei{
-  color: #FF00FF;
-}
-#contact{
-  color: #808000;
-}
+
+
 .nav ul {
   margin: 0 0 0 0;
   padding: 20px 10px 15px 20px;
-  background-image: url(../images/menu-bg.png);
+  /*background-image: url(../images/menu-bg.png);*/
   background-repeat: repeat-x;
 
 }
