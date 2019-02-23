@@ -36,7 +36,7 @@
             <!--<li><a href="access.html" id="access">アクセス</a></li>-->
             <li><a href="menu.html" id="menu">メニュー</a></li>
             <li><a href="calendar.html" id="calendar">出店カレンダー</a></li>
-            <li><a href="https://m.facebook.com/home.php?_rdr#!/albernihotdog/?ref=bookmarks"><img src="images/flogo_RGB_HEX-114.png" alt=""></a></li>
+            <li><a href="https://m.facebook.com/home.php?_rdr#!/albernihotdog/?ref=bookmarks"><img src="images/flogo_RGB_HEX-144.png" alt=""></a></li>
             <li><a href="https://twitter.com/alberni_hotdog"><img src="images/Twitter_Logo_WhiteOnBlue.png" alt=""></a></li>
             <li><a href="https://www.instagram.com/alberni_hotdog/"><img src="images/glyph-logo_May2016.png" alt=""></a></li>
             <!--<li><a href="fuukei.html" id="fuukei">店舗周辺</a></li>-->
