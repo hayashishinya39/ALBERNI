@@ -15,9 +15,7 @@
       font-size: 70px;
     }
 
-      .keyvisual{
-        padding: 50px;
-      }
+      
     </style>
   </head>
   <body>
