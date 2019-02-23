@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <style>
+    h1{
+      text-align: center;
+      margin-top: 100px;
+      font-weight: bold;
+      font-size: 70px;
+    }
 
       .keyvisual{
         padding: 50px;
@@ -19,6 +25,7 @@
     <div class="wrapper">
       <!-- ヘッダー始まり -->
       <header class="header">
+        <h1>ホットドッグとプーティンのキッチンカー</h1>
         <h1 class="logo"><a href="index.php"><img src="images/logo1.jpg" alt=""></a></h1>
 
         <nav class="nav">
@@ -29,9 +36,9 @@
             <!--<li><a href="access.html" id="access">アクセス</a></li>-->
             <li><a href="menu.html" id="menu">メニュー</a></li>
             <li><a href="calendar.html" id="calendar">出店カレンダー</a></li>
-            <li><a href="https://m.facebook.com/home.php?_rdr#!/albernihotdog/?ref=bookmarks">Facebook</a></li>
-            <li><a href="https://twitter.com/alberni_hotdog">Twitter</a></li>
-            <li><a href="https://www.instagram.com/alberni_hotdog/">Instagram</a></li>
+            <li><a href="https://m.facebook.com/home.php?_rdr#!/albernihotdog/?ref=bookmarks"><img src="images/flogo_RGB_HEX-114.png" alt=""></a></li>
+            <li><a href="https://twitter.com/alberni_hotdog"><img src="images/Twitter_Logo_WhiteOnBlue.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/alberni_hotdog/"><img src="images/glyph-logo_May2016.png" alt=""></a></li>
             <!--<li><a href="fuukei.html" id="fuukei">店舗周辺</a></li>-->
             <!--<li><a href="contact.html" id="contact">お問い合わせ</a></li>-->
           </ul>
