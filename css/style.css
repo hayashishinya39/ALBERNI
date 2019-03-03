@@ -1,8 +1,9 @@
 @charset "UTF-8";
 
 /* すべてのWebページに適用される　*/
+
 html {
-  font-family: sans-serif;
+  font-family: "myfont";
 }
 html * {
   box-sizing: border-box;
@@ -26,6 +27,7 @@ body {
   height: 100%;
   margin: 0 auto;
 }
+
 h2  {
   color: #3f5170;
   font-size: 22px;
